@@ -1,0 +1,17 @@
+{% extends 'padre.html' %}
+
+{% block changes %}
+        
+ <h1> Lista de Alumnos </h1>
+ <p>
+    Vista de alumnos activos
+ </p>
+ <ul>
+    {% for curso in lista_cursos %}
+        <li> {{alumnos.nombre}} - {{alumnos.apellido}}</li>
+
+    {%endfor%}
+
+</ul>
+
+{% endblock changes %}

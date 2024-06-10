@@ -1,0 +1,17 @@
+{% extends 'padre.html' %}
+
+{% block changes %}
+        
+ <h1> Lista de Profesores </h1>
+ <p>
+    Vista de profesores activos
+ </p>
+ <ul>
+    {% for curso in lista_cursos %}
+        <li> {{profesores.nombre}} - {{profesores.camada}}</li>
+
+    {%endfor%}
+
+</ul>
+
+{% endblock changes %}
